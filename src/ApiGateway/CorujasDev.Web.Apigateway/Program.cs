@@ -13,7 +13,7 @@ namespace CorujasDev.Web.Apigateway
             new WebHostBuilder()
                  .UseKestrel(options =>
                  {
-                     options.ListenLocalhost(3005);
+                     options.ListenLocalhost(4005);
                  })
                  .UseContentRoot(Directory.GetCurrentDirectory())
                  .ConfigureAppConfiguration((hostingContext, config) =>

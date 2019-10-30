@@ -13,6 +13,6 @@ namespace CorujasDev.Vagas.Web.Api
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://*:3001");
+                .UseUrls("http://*:4001");
     }
 }

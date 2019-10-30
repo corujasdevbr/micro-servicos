@@ -21,7 +21,7 @@ namespace CorujasDev.Eventos.Infra.Data.Contexto
             if (!optionsBuilder.IsConfigured)
             {
                 //optionsBuilder.UseSqlServer("Data Source=192.168.3.54,1433;Initial Catalog=Senai_Eventos;user id=sa; password=Info@132");
-                optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress;Initial Catalog=CorujasDev_Eventos;integrated security=true");
+                optionsBuilder.UseSqlServer("Data Source=localhost,1433;Initial Catalog=CorujasDev_Eventos;user id=sa; password=Info@132");
             }
         }
 

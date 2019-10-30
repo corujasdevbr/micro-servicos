@@ -1,17 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
-using CorujasDev.Vagas.Dominio.Entidades;
+﻿using System;
+using CorujasDev.Identity.Dominio.Entidades;
+using Microsoft.EntityFrameworkCore;
 
-namespace CorujasDev.Vagas.Infra.Data.Contexto
+namespace CorujasDev.Identity.Infra.Data.Contexto
 {
-    public class VagasContexto : DbContext
+    public class UsuariosContexto : DbContext
     {
-        public DbSet<VagaEntidade> Vagas { get; set; }
+        public DbSet<UsuarioEntidade> Usuarios { get; set; }
 
-        public VagasContexto()
+        public UsuariosContexto()
         {
         }
 
-        public VagasContexto(DbContextOptions<VagasContexto> options)
+        public UsuariosContexto(DbContextOptions<UsuariosContexto> options)
             : base(options)
         {
         }
@@ -21,7 +22,7 @@ namespace CorujasDev.Vagas.Infra.Data.Contexto
             if (!optionsBuilder.IsConfigured)
             {
                 //optionsBuilder.UseSqlServer("Data Source=192.168.3.54,1433;Initial Catalog=Senai_Vagas;user id=sa; password=Info@132");
-                optionsBuilder.UseSqlServer("Data Source=localhost,1433;Initial Catalog=CorujasDev_Vagas;user id=sa; password=Info@132");
+                optionsBuilder.UseSqlServer("Data Source=localhost,1433;Initial Catalog=CorujasDev_Usuarios;user id=sa; password=Info@132");
             }
         }
 
@@ -31,4 +32,3 @@ namespace CorujasDev.Vagas.Infra.Data.Contexto
         }
     }
 }
-

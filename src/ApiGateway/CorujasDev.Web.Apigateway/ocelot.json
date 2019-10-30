@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3002
+          "Port": 4002
         }
       ],
       "UpstreamPathTemplate": "/eventos",
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3002
+          "Port": 4002
         }
       ],
       "UpstreamPathTemplate": "/eventos/{id}",
@@ -32,7 +32,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3001
+          "Port": 4001
 
         }
       ],
@@ -46,7 +46,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 3001
+          "Port": 4001
 
         }
       ],

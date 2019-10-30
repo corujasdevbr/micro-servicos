@@ -1,0 +1,2 @@
+insert into Vagas(id, datacriacao, titulo, Empresa, descricao, endereco,email, curso, Salario, Ativa)
+                    values(NEWID(), GETDATE(), 'Estagiário de Desenvolvimento', 'CorujasDev', 'Estagiário full stack com conhecimentos em devops', 'Rua 01', 'vagas@corujasdev.com.br', 'Desenvolvimento de sistemas', '1500', 1)
