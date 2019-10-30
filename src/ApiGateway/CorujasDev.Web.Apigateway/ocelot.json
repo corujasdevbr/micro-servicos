@@ -1,6 +1,19 @@
 {
   "ReRoutes": [
     {
+      "DownstreamPathTemplate": "/api/eventos",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 3002
+        }
+      ],
+      "UpstreamPathTemplate": "/eventos",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "eventos"
+    },
+    {
       "DownstreamPathTemplate": "/api/eventos/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -24,6 +37,20 @@
         }
       ],
       "UpstreamPathTemplate": "/vagas/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "vagas"
+    },
+    {
+      "DownstreamPathTemplate": "/api/vagas",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 3001
+
+        }
+      ],
+      "UpstreamPathTemplate": "/vagas",
       "UpstreamHttpMethod": [ "Get" ],
       "Key": "vagas"
     }

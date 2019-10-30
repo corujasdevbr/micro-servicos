@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
 using System.IO;
 
 namespace CorujasDev.Web.Apigateway
@@ -11,7 +13,7 @@ namespace CorujasDev.Web.Apigateway
             new WebHostBuilder()
                  .UseKestrel(options =>
                  {
-                     options.ListenLocalhost(3000);
+                     options.ListenLocalhost(3005);
                  })
                  .UseContentRoot(Directory.GetCurrentDirectory())
                  .ConfigureAppConfiguration((hostingContext, config) =>
@@ -24,8 +26,7 @@ namespace CorujasDev.Web.Apigateway
                          .AddEnvironmentVariables();
                  })
                  .ConfigureServices(s => {
-                     s.AddOcelot()
-                      .AddTransientDefinedAggregator<CustomerWithOrdersAggregator>();
+                     s.AddOcelot();
                  })
                  .ConfigureLogging((hostingContext, logging) =>
                  {
