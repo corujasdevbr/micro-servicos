@@ -1,45 +1,40 @@
 ﻿using CorujasDev.Identity.Dominio.Enums;
+using System;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CorujasDev.Identity.Dominio.Entidades
+namespace CorujasDev.Identity.Servicos.ViewModels.Usuario
 {
-
-    [Table("Usuarios")]
-    public class UsuarioEntidade : BaseEntidade
+    public class CadastrarUsuarioViewModel
     {
-        [DataType("VARCHAR(150)")]
+        public Guid Id { get; set; }
+
+        public DateTime DataCriacao { get; set; }
+
         [Required]
         public string NumeroMatricula { get; set; }
 
-        [DataType("VARCHAR(150)")]
         [Required]
         public string Nome { get; set; }
 
-        [DataType("VARCHAR(20)")]
         [Required]
         public string Telefone { get; set; }
 
-        [DataType("VARCHAR(20)")]
         [Required]
         public string Celular { get; set; }
 
-        [DataType("VARCHAR(150)")]
         [Required]
         public string Email { get; set; }
 
-        [DataType("VARCHAR(150)")]
         [Required]
         public string Senha { get; set; }
 
-        [DataType("VARCHAR(20)")]
         [Required]
         public string Cpf { get; set; }
 
-        [DataType("VARCHAR(150)")]
+        [Required]
         public string Curso { get; set; }
 
-        [DataType("VARCHAR(10)")]
+        [Required]
         public string Turma { get; set; }
 
         public bool Ativo { get; set; }

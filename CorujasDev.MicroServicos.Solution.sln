@@ -42,13 +42,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Web.Apigateway",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{F52AA3BC-6DE1-4B6B-89CE-A99B3E31E127}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Eventos.Dominio", "src\MicroServicos\Eventos\CorujasDev.Eventos.Dominio\CorujasDev.Eventos.Dominio.csproj", "{4BD72097-725F-4320-A222-436CD1A5169D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Eventos.Dominio", "src\MicroServicos\Eventos\CorujasDev.Eventos.Dominio\CorujasDev.Eventos.Dominio.csproj", "{4BD72097-725F-4320-A222-436CD1A5169D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Eventos.Infra.Data", "src\MicroServicos\Eventos\CorujasDev.Eventos.Infra.Data\CorujasDev.Eventos.Infra.Data.csproj", "{DA3A1672-8700-4CE3-B919-A190CD9EB4C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Eventos.Infra.Data", "src\MicroServicos\Eventos\CorujasDev.Eventos.Infra.Data\CorujasDev.Eventos.Infra.Data.csproj", "{DA3A1672-8700-4CE3-B919-A190CD9EB4C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Eventos.Servicos", "src\MicroServicos\Eventos\CorujasDev.Eventos.Servicos\CorujasDev.Eventos.Servicos.csproj", "{D4CEACF1-2FB9-473A-B748-31655B86CC76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Eventos.Servicos", "src\MicroServicos\Eventos\CorujasDev.Eventos.Servicos\CorujasDev.Eventos.Servicos.csproj", "{D4CEACF1-2FB9-473A-B748-31655B86CC76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Eventos.Web.Api", "src\MicroServicos\Eventos\CorujasDev.Eventos.Web.Api\CorujasDev.Eventos.Web.Api.csproj", "{2280840A-7EBD-4CE2-8B29-1848189DE97E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Eventos.Web.Api", "src\MicroServicos\Eventos\CorujasDev.Eventos.Web.Api\CorujasDev.Eventos.Web.Api.csproj", "{2280840A-7EBD-4CE2-8B29-1848189DE97E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apresentacao", "Apresentacao", "{BAA04909-CF33-44CC-9DC6-E5B12F4186D9}"
 EndProject
@@ -58,11 +58,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Data", "Infra.Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servicos", "Servicos", "{04C49558-B255-460E-A7E4-D21FDCD9BAF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Identity.Dominio", "src\MicroServicos\Identity\CorujasDev.Identity.Dominio\CorujasDev.Identity.Dominio.csproj", "{817F3B10-CD1D-4209-8470-4E12EB605AB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Identity.Dominio", "src\MicroServicos\Identity\CorujasDev.Identity.Dominio\CorujasDev.Identity.Dominio.csproj", "{817F3B10-CD1D-4209-8470-4E12EB605AB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Identity.Infra.Data", "src\MicroServicos\Identity\CorujasDev.Identity.Infra.Data\CorujasDev.Identity.Infra.Data.csproj", "{9B31C41D-7655-4CBB-AA34-E59F09D4FD8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Identity.Infra.Data", "src\MicroServicos\Identity\CorujasDev.Identity.Infra.Data\CorujasDev.Identity.Infra.Data.csproj", "{9B31C41D-7655-4CBB-AA34-E59F09D4FD8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Identity.Servicos", "src\MicroServicos\Identity\CorujasDev.Identity.Servicos\CorujasDev.Identity.Servicos.csproj", "{CF965026-60E5-460E-BEB9-D544CB6AD991}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Identity.Servicos", "src\MicroServicos\Identity\CorujasDev.Identity.Servicos\CorujasDev.Identity.Servicos.csproj", "{CF965026-60E5-460E-BEB9-D544CB6AD991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Identity.Web.Api", "src\MicroServicos\Identity\CorujasDev.Identity.Web.Api\CorujasDev.Identity.Web.Api.csproj", "{367EDDA8-3D23-485A-A59B-DB5827D48160}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -118,6 +120,10 @@ Global
 		{CF965026-60E5-460E-BEB9-D544CB6AD991}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF965026-60E5-460E-BEB9-D544CB6AD991}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF965026-60E5-460E-BEB9-D544CB6AD991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367EDDA8-3D23-485A-A59B-DB5827D48160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367EDDA8-3D23-485A-A59B-DB5827D48160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367EDDA8-3D23-485A-A59B-DB5827D48160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367EDDA8-3D23-485A-A59B-DB5827D48160}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +158,7 @@ Global
 		{817F3B10-CD1D-4209-8470-4E12EB605AB5} = {4F57823E-CBF4-4F00-B409-32B102AB58B8}
 		{9B31C41D-7655-4CBB-AA34-E59F09D4FD8E} = {0505B8C1-D836-472D-8BDE-CDE436A8CC32}
 		{CF965026-60E5-460E-BEB9-D544CB6AD991} = {04C49558-B255-460E-A7E4-D21FDCD9BAF9}
+		{367EDDA8-3D23-485A-A59B-DB5827D48160} = {BAA04909-CF33-44CC-9DC6-E5B12F4186D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ACA00A42-E8A4-457C-935E-F142B96805FE}

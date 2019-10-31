@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq.Expressions;
 using CorujasDev.Identity.Dominio.Entidades;
 using CorujasDev.Identity.Servicos.ViewModels.Login;
@@ -22,6 +23,6 @@ namespace CorujasDev.Identity.Servicos.Interfaces
 
         void Desativar(Guid id);
 
-        UsuarioViewModel Autenticar(LoginViewModel login);
+        string Autenticar(LoginViewModel login);
     }
 }

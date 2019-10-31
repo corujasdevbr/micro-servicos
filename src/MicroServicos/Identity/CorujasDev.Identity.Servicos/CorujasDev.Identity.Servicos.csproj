@@ -8,18 +8,28 @@
     <Compile Remove="Class1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AutoMapper\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Ioc\" />
     <Folder Include="Servicos\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="ViewModels\Usuario\" />
     <Folder Include="ViewModels\Login\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Vagas\CorujasDev.Vagas.Dominio\CorujasDev.Vagas.Dominio.csproj" />
+    <ProjectReference Include="..\..\Vagas\CorujasDev.Vagas.Servicos\CorujasDev.Vagas.Servicos.csproj" />
     <ProjectReference Include="..\CorujasDev.Identity.Dominio\CorujasDev.Identity.Dominio.csproj" />
+    <ProjectReference Include="..\CorujasDev.Identity.Infra.Data\CorujasDev.Identity.Infra.Data.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.identitymodel.tokens\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.identitymodel.tokens.jwt\5.3.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

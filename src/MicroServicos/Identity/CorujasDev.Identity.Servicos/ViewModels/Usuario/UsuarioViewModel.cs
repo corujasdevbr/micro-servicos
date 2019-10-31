@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CorujasDev.Identity.Dominio.Enums;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace CorujasDev.Identity.Servicos.ViewModels.Usuario
@@ -41,6 +42,8 @@ namespace CorujasDev.Identity.Servicos.ViewModels.Usuario
 
 
         public bool Ativo { get; set; }
+
+        public EnumTipoUsuario TipoUsuario { get; set; }
     }
     
 }

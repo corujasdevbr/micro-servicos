@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using CorujasDev.Identity.Dominio.Entidades;
@@ -50,9 +51,9 @@ namespace CorujasDev.Identity.Infra.Data.Repositorios
             return _contexto.Usuarios;
         }
 
-        public IQueryable<UsuarioEntidade> Pesquisar(Expression<Func<UsuarioEntidade, bool>> filtro)
+        public ICollection<UsuarioEntidade> Pesquisar(Expression<Func<UsuarioEntidade, bool>> filtro)
         {
-            return _contexto.Set<UsuarioEntidade>().Where(filtro);
+            return _contexto.Usuarios.Where(filtro).ToList();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using CorujasDev.Identity.Dominio.Entidades;
@@ -15,7 +16,7 @@ namespace CorujasDev.Identity.Dominio.Interfaces.Repositorios
 
         void Alterar(UsuarioEntidade vaga);
 
-        IQueryable<UsuarioEntidade> Pesquisar(Expression<Func<UsuarioEntidade, bool>> predicate);
+        ICollection<UsuarioEntidade> Pesquisar(Expression<Func<UsuarioEntidade, bool>> predicate);
 
         void Commit();
 

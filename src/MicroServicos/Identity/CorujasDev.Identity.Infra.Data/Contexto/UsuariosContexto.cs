@@ -22,7 +22,7 @@ namespace CorujasDev.Identity.Infra.Data.Contexto
             if (!optionsBuilder.IsConfigured)
             {
                 //optionsBuilder.UseSqlServer("Data Source=192.168.3.54,1433;Initial Catalog=Senai_Vagas;user id=sa; password=Info@132");
-                optionsBuilder.UseSqlServer("Data Source=localhost,1433;Initial Catalog=CorujasDev_Usuarios;user id=sa; password=Info@132");
+                optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS;Initial Catalog=CorujasDev_Usuarios;integrated security=true");
             }
         }
 

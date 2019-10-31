@@ -1,0 +1,2 @@
+insert into Usuarios(id, datacriacao, NumeroMatricula, Nome, Telefone, Celular, Email, Senha, Cpf,Curso,Turma, ativo, TipoUsuario)
+		values(NEWID(), getdate(), '1056908', 'Fernando Henrique', '11972084339', '11972084339','fernando.guerra@corujasdev.com.br', '43211234', '29862294845', 'Desenvolvimento de sistemas', null, 1, 1)

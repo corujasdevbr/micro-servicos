@@ -53,6 +53,19 @@
       "UpstreamPathTemplate": "/vagas",
       "UpstreamHttpMethod": [ "Get" ],
       "Key": "vagas"
+    },
+    {
+      "DownstreamPathTemplate": "/api/account/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4006
+        }
+      ],
+      "UpstreamPathTemplate": "/login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "Key": "usuarios"
     }
   ],
   "GlobalConfiguration": {}
